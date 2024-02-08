@@ -1,0 +1,382 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+.head1 a,
+.head2 a {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.head1 {
+    width: 55%;
+}
+
+.head1 i {
+    padding: 0px 5px;
+    color: rgb(0, 174, 239);
+}
+
+.head2 a {
+    padding: 0px 7px;
+    color: rgb(112, 112, 112);
+}
+
+nav {
+    width: 100%;
+    height: 14vh;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+nav ul li{
+    position: relative;
+    padding: 2px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(35, 35, 35)
+}
+
+.fa-solid{
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+
+nav li a:hover, .dropdown ul li:hover{
+    color: rgb(0, 174, 239);
+}
+
+.dropdown{
+    display: none;
+}
+
+nav ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    top: 25px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 5px;
+    border: 1px solid white;
+}
+
+nav ul li:hover .dropdown ul{
+    display: block;
+}
+
+nav ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+.dropdown1{
+    display: none;
+}
+
+.dropdown ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 152px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 5px;
+} 
+
+.dropdown ul li:hover .dropdown1 ul{
+    display: block;
+}
+
+.dropdown ul li:hover .dropdown1 ul li{
+    width: 150px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+.btn {
+    height: 48%;
+    width: 11%;
+    color: white;
+    background-color: rgb(0, 174, 239);
+    border: none;
+}
+
+.btn:hover{
+    color: rgb(0, 174, 239);
+    background-color: white;
+    border: 2px solid rgb(0, 174, 239);
+}
+
+.name{
+    width: 100%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./Img/bg-img/12.jpg') no-repeat fixed center/cover;
+}
+
+.name::before{
+    width: 100%;
+    height: 30%;
+    content: "";
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+    position: absolute;
+}
+
+.name h1{
+    color: white;
+    font-size: 38px;
+    z-index: 1;
+}
+
+.name div{
+    position: absolute;
+    top: 370px;
+    left: 120px;
+}
+
+.name div a{
+    text-decoration: none;
+    color: black;
+}
+
+.name div span{
+   color: rgb(112,112,135)
+}
+
+.contact{
+    width: 100%;
+    height: 180vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact1{
+    width: 80%;
+    height: 38%;
+    /* border: 1px solid black; */
+}
+
+.contact1 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact2{
+    width: 80%;
+    height: 32%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.contact2-address{
+    width:30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    color: white;
+    background-color: rgb(0, 174, 239);
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.contact2-address p{
+    padding: 12px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contact2-form{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding-left: 30px;
+}
+
+.contact2-form h1{
+    margin-bottom: 38px;
+    text-decoration: underline rgb(0, 174, 239) 5px;
+}
+
+.contact2-form input{
+    width: 48%;
+    height: 12%;
+    margin: 30px 0;
+    padding-left: 15px;
+}
+
+#input{
+    margin-right: 18px
+}
+
+.contact2-form textarea{
+    width: 99%;
+    height: 30%;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.contact2-form button{
+    width: 25%;
+    height: 12%;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 174, 239);
+    border: none;
+}
+
+.contact2-form button:hover{
+    color: rgb(0, 174, 239);
+    background-color: white;
+    border: 1px solid rgb(0, 174, 239);
+}
+
+
+.footer{
+    width: 100%;
+    height: 80vh;
+    /* border-bottom: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url('./Img/bg-img/3.jpg') no-repeat fixed center/cover;
+}
+
+.footer::before{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid black; */
+    content: "";
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+    position: absolute;
+}
+
+.foot{
+    width: 85%;
+    height: 80%;
+    border-bottom: 1px solid black;
+    display:  flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 1;
+}
+
+.foot1{
+    width: 31%;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+
+.foot1 p i{
+    color: rgb(0, 174, 239);;
+}
+
+.foot1 img{
+    padding-bottom: 18px;
+}
+
+.foot2{
+    width: 22%;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+
+.foot3{
+    width: 16%;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+
+.foot4{
+    width: 22%;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+
+.foot4 h3{
+    padding-bottom: 28px !important;
+}
+
+.foot4 input{
+    width: 100%;
+    height: 12%;
+    padding-left: 10px;
+}
+
+.foot4 a{
+    display: inline-block;
+    padding: 18px 12px 0 0;
+    color: white;
+}
+
+.foot1, .foot2, .foot3, .foot4{
+    position: relative;
+    top: 60px;
+}
+
+.foot li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.foot p{
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.foot h3{
+    padding-bottom: 22px;
+}
+
+.copyright{
+    color: white;
+    z-index: 1;
+}
